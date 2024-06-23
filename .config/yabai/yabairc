@@ -5,11 +5,22 @@ yabai -m config window_placement second_child
 
 
 #padding
-yabai -m config top_padding 10
-yabai -m config bottom_padding 10
-yabai -m config left_padding 10
-yabai -m config right_padding 10
-yabai -m config window_gap 10
+yabai -m config top_padding 15
+yabai -m config bottom_padding 15
+yabai -m config left_padding 15
+yabai -m config right_padding 15
+yabai -m config window_gap 15
+
+
+#window border
+#yabai -m config window_border on
+#yabai -m config window_border_width 8
+#yabai -m config active_window_border_color 0xe0d79921
+#yabai -m config normal_window_border_color 0xff555555
+
+#yabai -m window --toggle border
+#yabai -m rule --add app=Terminal border=off
+
 
 #mouse settings
 yabai -m config mouse_follows_focus on
@@ -30,4 +41,5 @@ yabai -m rule --add app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Mircrosoft Teams$" manage=off
 
+borders active_color=0xe0cc241d inactive_color=0xe01d2021 width=6.0 &
 

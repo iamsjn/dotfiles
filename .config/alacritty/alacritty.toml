@@ -1,0 +1,81 @@
+# import = ["~/.config/alacritty/catppuccin-mocha.toml",]
+import = ["~/.config/alacritty/tokyonight_moon.toml",]
+
+[shell]
+program = "/bin/zsh"
+args = [ "-l", "-c", "tmux" ]
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[cursor.style]
+blinking = "Always"
+# shape = "Block"
+
+# [env]
+# TERM = "xterm-256color"
+
+[font]
+builtin_box_drawing = true
+size = 14.0
+
+[font.bold]
+style = "ExtraBold"
+
+[font.bold_italic]
+style = "ExtraBold Italic"
+
+[font.italic]
+style = "Bold Italic"
+
+[font.normal]
+family = "MesloLGS Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+chars = "\u001B"
+key = 94
+
+[[keyboard.bindings]]
+chars = '\'
+key = 93
+
+[window]
+dynamic_padding = true
+opacity = 0.98
+
+[window.dimensions]
+columns = 80
+lines = 24
+
+[window.padding]
+x = 4
+y = 4
+
