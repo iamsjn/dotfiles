@@ -39,7 +39,9 @@ blinking = "Always"
 
 [font]
 builtin_box_drawing = true
-size = 14.0
+size = 16.0
+offset.x = 0
+offset.y = 1
 
 [font.bold]
 style = "ExtraBold"
@@ -51,7 +53,7 @@ style = "ExtraBold Italic"
 style = "Bold Italic"
 
 [font.normal]
-family = "MesloLGS Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [[keyboard.bindings]]
